@@ -1,6 +1,0 @@
-#!/bin/sh
-	exec<fname
-	while read line
-	do
-		curl -o "../mp3/$line.mp3" "http://japanese.lingualift.com/jp/files/audio/kana/$line.mp3"        
-	done
