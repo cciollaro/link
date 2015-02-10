@@ -1,40 +1,46 @@
-﻿<title>Link</title>
-<LINK rel="shortcut icon" href="/link/favicon.ico" type="image/x-icon">
-<link rel="stylesheet" type="text/css" href="css/index.css"> 
-<link rel="stylesheet" type="text/css" href="css/settings.css"> 
-<link rel="stylesheet" type="text/css" href="css/kanachart.css"> 
-<link rel="stylesheet" type="text/css" href="css/game.css"> 
-
-<div class="wrapper">
-    <div id="settings_overlay" style="display:none;">
-        <div id="return_to_game" class="whitebox"></div>
-        <div id="settings">
-            <div id="kana_buttons_wrapper">
-                <div id="hiragana_buttons">
-                    <label>Hiragana: </label>
-                    <input type="button" onclick="massSet('hiragana', true)" data-w="200" data-h="200" value="all" />
-                    <input type="button" onclick="massSet('hiragana', false)" data-w="400" data-h="400" value="none" />
+﻿<html>
+    <head>
+        <title>Link</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+        <link rel="shortcut icon" href="/link/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="css/index.css" charset="utf-8"> 
+        <link rel="stylesheet" type="text/css" href="css/settings.css" charset="utf-8"> 
+        <link rel="stylesheet" type="text/css" href="css/kanachart.css" charset="utf-8"> 
+        <link rel="stylesheet" type="text/css" href="css/game.css" charset="utf-8"> 
+    </head>
+    <body>
+        <div class="wrapper">
+            <div id="settings_overlay" style="display:none;">
+                <div id="return_to_game" class="whitebox"></div>
+                <div id="settings">
+                    <div id="kana_buttons_wrapper">
+                        <div id="hiragana_buttons">
+                            <label>Hiragana: </label>
+                            <input type="button" onclick="massSet('hiragana', true)" data-w="200" data-h="200" value="all" />
+                            <input type="button" onclick="massSet('hiragana', false)" data-w="400" data-h="400" value="none" />
+                        </div>
+                        <div id="katakana_buttons">
+                            <label>Katakana: </label>
+                            <input type="button" onclick="massSet('katakana', true)" data-w="200" data-h="200" value="All" />
+                            <input type="button" onclick="massSet('katakana', false)" data-w="400" data-h="400" value="none" />
+                        </div>
+                    </div>
                 </div>
-                <div id="katakana_buttons">
-                    <label>Katakana: </label>
-                    <input type="button" onclick="massSet('katakana', true)" data-w="200" data-h="200" value="All" />
-                    <input type="button" onclick="massSet('katakana', false)" data-w="400" data-h="400" value="none" />
-                </div>
+                <div id="mute_controller" class="whitebox"></div>
+                <input id="volSlider" type="range" min="0" max="1" step=".01" value=".5" />
+                <label id="speedlabel">Speed</label><input id="speedSlider" type="range" min="0" max="1" step=".01" value=".5" />
+                <label id="quantitylabel">Quantity</label><input id="quantitySlider" type="range" min="0" max="1" step=".01" value=".5" />
             </div>
+            <div id="score">Score: 0</div>
+            <div id="settings_icon" class="whitebox setting_iconmask"></div>
+            <canvas id="game"></canvas>
+            <input type="text" id="in" />
         </div>
-        <div id="mute_controller" class="whitebox"></div>
-        <input id="volSlider" type="range" min="0" max="1" step=".01" value=".5" />
-        <label id="speedlabel">Speed</label><input id="speedSlider" type="range" min="0" max="1" step=".01" value=".5" />
-        <label id="quantitylabel">Quantity</label><input id="quantitySlider" type="range" min="0" max="1" step=".01" value=".5" />
-    </div>
-    <div id="score">Score: 0</div>
-    <div id="settings_icon" class="whitebox setting_iconmask"></div>
-    <canvas id="game"></canvas>
-    <input type="text" id="in" />
-</div>
 
-<script src="js/settings.js"></script>
-<script src="js/kanachart.js"></script>
-<script src="js/game.js"></script>
-<script src="js/sounds.js"></script>
-<script src="js/index.js"></script>
+        <script src="js/settings.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/kanachart.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/game.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/sounds.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+    </body>
+</html>
