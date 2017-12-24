@@ -30,8 +30,6 @@ ctx.setTransform(RATIO, 0, 0, RATIO, 0, 0);
 function refreshCanvasSize(newWidth, newHeight){
     canvas.width = newWidth * RATIO;
     canvas.height = newHeight * RATIO;
-    canvas.style.width = newWidth + "px";
-    canvas.style.height = newHeight + "px";
     ctx.fillStyle = '#000000';
     ctx.fillRect(0,   0, newWidth, newHeight);
     ctx.fillStyle = '#FFFFFF';
