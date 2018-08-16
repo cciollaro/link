@@ -8,7 +8,7 @@
 }
 
 #return_to_game {
-    -webkit-mask-image: url(/link/img/ic_cancel_48px.svg);
+    -webkit-mask-image: url(../img/ic_cancel_48px.svg);
     font-size: 20px;
     position: absolute;
     top: 0;
@@ -28,7 +28,7 @@ label {
 }
 
 #mute_controller {
-    -webkit-mask-image: url(/link/img/ic_volume_off_48px.svg);
+    -webkit-mask-image: url(../img/ic_volume_off_48px.svg);
     position: absolute;
     top: 90px;
     right: 335px;

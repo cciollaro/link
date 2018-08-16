@@ -13,7 +13,7 @@
 }
 
 #settings_icon {
-    -webkit-mask-image: url(/link/img/ic_settings_48px.svg);
+    -webkit-mask-image: url(../img/ic_settings_48px.svg);
     position: absolute;
     top: 12px;
     right: 12px;

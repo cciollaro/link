@@ -29,9 +29,9 @@ Settings.prototype.updateSettingsView = function() {
     document.getElementById("speedSlider").value = this.speed;
     document.getElementById("quantitySlider").value = this.quantity;
     if(!this.mute){
-        document.getElementById("mute_controller").style.webkitMaskImage = 'url("/link/img/ic_volume_up_48px.svg")';
+        document.getElementById("mute_controller").style.webkitMaskImage = 'url("img/ic_volume_up_48px.svg")';
     } else {
-        document.getElementById("mute_controller").style.webkitMaskImage = 'url("/link/img/ic_volume_off_48px.svg")';
+        document.getElementById("mute_controller").style.webkitMaskImage = 'url("img/ic_volume_off_48px.svg")';
     }
 };
 
@@ -63,10 +63,10 @@ Settings.prototype.updateQuantity = function(newVal){
 document.getElementById('mute_controller').addEventListener('click', function(){
     if(settings.mute){
         settings.updateMute(false);
-        document.getElementById("mute_controller").style.webkitMaskImage = 'url("/link/img/ic_volume_up_48px.svg")';
+        document.getElementById("mute_controller").style.webkitMaskImage = 'url("img/ic_volume_up_48px.svg")';
     } else {
         settings.updateMute(true);
-        document.getElementById("mute_controller").style.webkitMaskImage = 'url("/link/img/ic_volume_off_48px.svg")';
+        document.getElementById("mute_controller").style.webkitMaskImage = 'url("img/ic_volume_off_48px.svg")';
     }
 });
 
